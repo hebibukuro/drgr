@@ -1,27 +1,46 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset='utf-8'>
 <title>drgrゲーム</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' href='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css' />
+<script src='http://code.jquery.com/jquery-1.6.4.min.js'></script>
+<script src='http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js'></script>
+
+<style type="text/css">
+<!--
+.page{
+	background:#F0EBB1;
+}
+.btn{
+	background:#93CCD7;
+}
+
+
+--> 
+</style>
+<script type="text/javascript">
+function onBtn(){
+
+	$('#btn').text( '実行中');
+}
+
+</script>
 </head>
 
 <body>
-<div data-role="page" id="top" data-theme="f">
+<div data-role='page' id='top' data-theme='f' class='page'>
 
-<div data-role="header" data-theme="f">
+<div data-role='header' data-theme='f'>
 <h1>drgrゲーム</h1>
 </div>
 
-<div data-role="content">
-<img src="1.jpg" alt="" width="100%">
+<div data-role='content'>
+<img src='' alt='' width='100%'/>
 <p>スタートボタンを押すと始まります。</p>
-<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
-<li><a  href="javascript:void(0)" onclick="alert("スタート");">スタート</a></li>
+<a href='javascript:void(0);' data-role="button" data-type=”horizontal” onclick='onBtn();' class='btn' id='btn'>スタート</a>
 
-</ul>
 
 </div>
 
